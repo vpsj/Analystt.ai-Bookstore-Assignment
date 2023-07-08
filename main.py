@@ -11,9 +11,6 @@ db = mysql.connector.connect(
     database="bookstore"
 )
 
-# Sample book data
-# Assuming you have a "books" table in the "bookstore" database with columns:
-# id, title, author, description, cover_image, price, rating, category
 
 @app.route('/books', methods=['GET'])
 def get_books():
